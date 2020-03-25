@@ -180,6 +180,12 @@ var g, game = {
                 this.moveOwl();
             }
         }, 20);
+    },
+
+    tapJump: function() {
+        if(self.gameDiv.style.display == 'block') {
+            this.upArrowPressed();
+        }
     }
 }
 

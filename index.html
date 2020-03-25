@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="main.css" />
 
-<body onkeydown="game.moveSelection(event)" onkeyup="">
+<body onkeydown="game.moveSelection(event)" onclick="game.tapJump()">
     <div class="gameDiv" id="gameDiv">
         <div class="lifeRemain" id="lifeRemain">
             <img src="media/image/life.png" class="life" />
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="floorDiv" onclick="game.upArrowPressed()"></div>
+    <div class="floorDiv"></div>
 
     <div id="overlay" class="overlay"></div>
 </body>
