@@ -1,0 +1,37 @@
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<body onkeydown="game.moveSelection(event)" onkeyup="">
+    <div class="gameDiv" id="gameDiv">
+        <div class="lifeRemain" id="lifeRemain">
+            <img src="media/image/life.png" class="life" />
+        </div>
+
+        <div class="scoreBoard">
+            Score : <span id="score">000000</span>
+        </div>
+        <div class="upperDiv">
+            <span class="extraPoints" id="extraPoints">+100</span>
+            <img src="media/image/mario-1.gif" class="mario" id="mario" />
+            <img src="media/image/owl-1.gif" class="owl" id="owl" />
+        </div>
+    </div>
+
+    <div class="mainMenuDiv" id="mainMenuDiv">
+        <div class="scoreBoardMain">
+            <div id="gameOver" style="color: red; padding-bottom: 10px;"><b>PLAY MARIO</b></div>
+            <div>Your Score : <span id="scoreMainMenu">000000</span></div>
+            <div>High Score : <span id="heighScore">000000</span></div>
+            <div class="playButton" onclick="game.startGame()">
+
+                <img src="media/image/play-2.webp" class="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="floorDiv">
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+</body>
+
+<script src="main.js"></script>

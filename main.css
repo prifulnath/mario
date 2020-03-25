@@ -1,0 +1,87 @@
+body {
+    overflow: hidden;
+    font-size: x-large;
+}
+.upperDiv { 
+    height: 450px;
+    position: relative;
+}
+.floorDiv { 
+    padding: 15px;
+    height: 250px;
+    background-image: url('media/image/mario-bg-brick.png');
+}
+.mario {
+    background-color: skyblue;
+    width: 100px;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+}
+.lifeRemain {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    /* background-color: black; */
+}
+.life {
+    height: 40px;
+}
+.scoreBoard {
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: blanchedalmond;
+    background-color: black;
+}
+.owl {
+    width: 50px;
+    position: absolute;
+    bottom: -5;
+    left: 110%;
+}
+.playButton img {
+    padding-top: 10px;
+    width: 50px;
+}
+.gameDiv {
+    display: none;
+    background-color: skyblue;
+}
+.mainMenuDiv {
+    height: 450px;
+    display: block;
+    position: relative;
+    background-color: skyblue;
+}
+.scoreBoardMain {
+    padding: 25px;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 100;
+    color: blanchedalmond;
+    background-color: black;
+}
+.extraPoints {
+    color: red;
+    position: absolute;
+    left: 40%;
+    bottom: 200;
+    display: none;
+    font-weight: bold;
+}
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.3);
+    z-index: 2;
+    cursor: pointer;
+  }
