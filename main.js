@@ -33,6 +33,8 @@ var g, game = {
     },
 
     initAction: function () {
+        self.highScore = localStorage.getItem("highScore");
+        self.heighMenu.innerHTML = '0'.repeat(6 - self.highScore.toString().length) + self.highScore;
     },
 
     updateLifeaRemain: function () {
@@ -81,6 +83,7 @@ var g, game = {
         self.scoreDiv.innerHTML = '0'.repeat(remainLength) + self.userScore;
         if (self.highScore < self.userScore) {
             self.highScore = self.userScore;
+            localStorage.setItem("highScore", self.highScore);
         }
     },
 
